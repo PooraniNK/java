@@ -58,6 +58,9 @@ jobs:
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
     - if: success()
+      run: echo "its working"
+    - if: failure()
+      run: echo "its not working"
     
 
     # ℹ️ Command-line programs to run using the OS shell.
