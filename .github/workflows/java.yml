@@ -23,6 +23,9 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn clean install -DskipTests
-    - name: Dump steps context
-      run: echo "$GITHUB_STEP_CONTEXT"
+  dump_contexts_to_log:
+     runs-on: ubuntu-latest
+     steps:    
+     - name: Dump steps context
+       run: echo '${{ (steps) }}'
   
