@@ -28,5 +28,5 @@ jobs:
      runs-on: ubuntu-18.04
      steps:    
      - name: Dump steps context
-       run: echo '${{ GITHUB_CONTEXT }}'
+       run: echo "$GITHUB_CONTEXT"
   
