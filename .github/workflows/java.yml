@@ -33,6 +33,9 @@ jobs:
     - name: Dump steps context
       if: always()
       run: echo '${{ toJSON(steps) }}'
-   
+    
+    - name: Dump job context
+      if: always()
+      run: echo '${{ toJSON(job) }}'
   
   
