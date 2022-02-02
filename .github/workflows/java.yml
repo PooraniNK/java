@@ -24,6 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install -DskipTests
   dump_contexts_to_log:
+     needs: [ build ]
      runs-on: ubuntu-latest
      steps:    
      - name: Dump steps context
