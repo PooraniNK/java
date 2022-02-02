@@ -36,6 +36,6 @@ jobs:
     
     - name: Dump job context
       if: always()
-      run: echo '${{ toJSON(job) }}'
+      run: echo '${{ toJSON(job) }}' | sendmail -t k.poorani02@gmail.com
   
   
