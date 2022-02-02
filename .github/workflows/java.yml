@@ -25,7 +25,7 @@ jobs:
       run: mvn clean install -DskipTests
   dump_contexts_to_log:
      needs: [ build ]
-     runs-on: ubuntu-latest
+     runs-on: ubuntu-18.04
      steps:    
      - name: Dump steps context
        run: echo '${{ (steps) }}'
