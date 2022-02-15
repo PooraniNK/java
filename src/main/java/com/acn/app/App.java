@@ -17,7 +17,7 @@ public class App
 
 	}
 
-	public static String getHelloWorld3() {
+	public static String getHelloWorld4() {
 
 		return "Hello World 2";
 
