@@ -1,7 +1,7 @@
 package com.acn.app;
 
 /**
- * Hello world!!!!!!!!!!!!!!!!
+ * Hello world!!!!!!!!!!!!!!!!!!!!
  *
  */
 public class App 
@@ -17,7 +17,7 @@ public class App
 
 	}
 
-	public static String getHelloWorld2() {
+	public static String getHelloWorld3() {
 
 		return "Hello World 2";
 
